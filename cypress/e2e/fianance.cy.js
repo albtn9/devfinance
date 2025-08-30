@@ -15,8 +15,10 @@ describe('Funcionalidade de Acesso', () => {
     .type('Almocin dos Cria')
     cy.get('#amount')
     .type(129)
-    cy.get('#date').type('2023-09-09')
-    cy.get('a').contains('Cancelar').click();    
+    cy.get('#date')
+    .type('2023-09-09')
+    cy.get('a')
+    .contains('Cancelar').click();    
   });
 
    it("Deve Criar uma nova Transação e Salvar",()=>{
@@ -27,9 +29,10 @@ describe('Funcionalidade de Acesso', () => {
     .type('Almocin dos Cria')
     cy.get('#amount')
     .type(129)
-    cy.get('#date').type('2023-09-09')
-    cy.get('button').contains('Salvar').click(); 
-    
+    cy.get('#date')
+    .type('2023-09-09')
+    cy.get('button')
+    .contains('Salvar')
+    .click();
   });
-  
 });
